@@ -82,7 +82,7 @@ body {
 .desktop {
     align-items:     center;
     display:         flex;
-    height:          11vh;
+    height:          7rem;
     justify-content: space-between;
 }
 
