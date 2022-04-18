@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    background-color: #2F4F30;
+}
+
+
+.title {
+    background-color: #000000;
+    color:            #ffffff;
+    font-size:        20px;
+    padding:          25px;
+    text-align:       center;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.blackjack-card {
+    left:        100px;
+    margin-left: -75px;
+    position:    relative;
+    width:       150px;
+}
+
+#box-player, 
+#box-computer {
+    height: 240px;
+}
+
