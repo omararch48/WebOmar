@@ -1,13 +1,16 @@
 // Elements
 const menuIcon = document.querySelector('.menu-logo-mobile');
-const mobileMenu = document.querySelector('.mobile ul');
+let mobileMenu = document.querySelector('.mobile-none-ul');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
 const elementVector = [main, footer,];
+
+
 // Put none display
 const putNone = () => {
-    if (mobileMenu.style.display !== 'none') {
-        mobileMenu.style.display = 'none'
+    if (mobileMenu.classList.contains('mobile-ul')) {
+        mobileMenu.classList.toggle('mobile-ul');
+        mobileMenu.classList.toggle('mobile-none-ul');
     }
 };
 
@@ -26,9 +29,6 @@ elementVector.forEach(element => {
 
 
 menuIcon.addEventListener('click', () => {
-    if (mobileMenu.style.display !== 'none') {
-        mobileMenu.style.display = 'none'
-    } else {
-        mobileMenu.style.display = 'flex';
-    }
+    mobileMenu.classList.toggle('mobile-ul');
+    mobileMenu.classList.toggle('mobile-none-ul');
 });

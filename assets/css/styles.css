@@ -183,7 +183,6 @@ body {
     padding:         0 0 0 4rem;
     letter-spacing:  0.2rem;
     text-shadow:     0.4rem 0.4rem 0.4rem var(--main-black);
-    background-color: red;
 }
 
 
@@ -246,7 +245,18 @@ body {
         color:         var(--main-yellow);
     }
 
-    .mobile ul {
+    .mobile-ul {
+        align-items:      left;
+        background-color: var(--main-green);
+        display:          flex;
+        flex-direction:   column;
+        justify-content:  center;
+        position:         absolute;
+        top:              11vh;
+        width:            100%;
+    }
+
+    .mobile-none-ul {
         align-items:      left;
         background-color: var(--main-green);
         display:          none;
@@ -296,7 +306,6 @@ body {
         padding:         0 0 0 2rem;
         letter-spacing:  0.2rem;
         text-shadow:     0.4rem 0.4rem 0.4rem var(--main-black);
-        background-color: blue;
     }
 }
 
@@ -1253,7 +1262,6 @@ body {
 .section-width {
     width: 100%;
 }
-
 
 /* Text */
 
